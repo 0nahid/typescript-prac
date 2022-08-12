@@ -123,5 +123,19 @@ type Dog = { barks: true };
 type Cheetah = { meows: true; fast: true };
 type Wolf = { barks: true; howls: true };
 type Animal = Cat | Dog | Cheetah | Wolf;
-const animal: Animal = { meows: true };
-console.log(animal);
+const animal: Animal = { meows: true, barks: true };
+// console.log(animal);
+
+// Declaring a simple interface that has 2 public properties x and y
+interface InputNumber {
+  x: number;
+  y: number;
+  z: number;
+}
+// Declaring a function that takes an input of type InputNumber
+const getLatestValue = (input: InputNumber): number => {
+  // input.x > input.y ? input.x : input.y > input.z ? input.y : input.z;
+  return input.x > input.y ? input.x : input.y > input.z ? input.y : input.z;
+};
+// console.log(getLatestValue({ x: 15, y: 2, z: .5 }));
+// console.log(getLatestValue({ x: 1, y: 2, z: 3 }));
