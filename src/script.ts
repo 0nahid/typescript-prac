@@ -101,10 +101,10 @@ const personArray2: Person[] = [person3, person4];
 
 // Enums
 enum Color {
-  Red="#ff0000",
-  Green="#00ff00",
-  Blue="#0000ff",
-};
+  Red = "#ff0000",
+  Green = "#00ff00",
+  Blue = "#0000ff",
+}
 const colorName: string = Color.Red;
 // console.log(colorName);
 
@@ -114,9 +114,6 @@ const toLowerCase = (str: string): string => {
 };
 // console.log(toLowerCase("NAHID"));
 // console.log(toLowerCase("NAHID HASSAN"));
-
-
-
 
 type Cat = { meows: true };
 type Dog = { barks: true };
@@ -139,3 +136,14 @@ const getLatestValue = (input: InputNumber): number => {
 };
 // console.log(getLatestValue({ x: 15, y: 2, z: .5 }));
 // console.log(getLatestValue({ x: 1, y: 2, z: 3 }));
+
+
+// 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
+// fibonaaci
+const fibonacci = (n: number): number => {
+  if (n === 0) return 0;
+  if (n === 1) return 1;
+  return fibonacci(n - 1) + fibonacci(n - 2);
+};
+// replace n with any number
+// console.log(fibonacci(10));
