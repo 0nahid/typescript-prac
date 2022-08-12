@@ -107,3 +107,12 @@ enum Color {
 };
 const colorName: string = Color.Red;
 // console.log(colorName);
+
+// function
+const toLowerCase = (str: string): string => {
+  return str.toLowerCase();
+};
+// console.log(toLowerCase("NAHID"));
+// console.log(toLowerCase("NAHID HASSAN"));
+
+
