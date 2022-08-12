@@ -97,4 +97,4 @@ const person4: Person = {
   hobbies: ["Coding", "Cooking"],
 };
 const personArray2: Person[] = [person3, person4];
-// console.log(personArray2);
+console.log(personArray2);
