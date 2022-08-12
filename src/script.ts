@@ -116,3 +116,12 @@ const toLowerCase = (str: string): string => {
 // console.log(toLowerCase("NAHID HASSAN"));
 
 
+
+
+type Cat = { meows: true };
+type Dog = { barks: true };
+type Cheetah = { meows: true; fast: true };
+type Wolf = { barks: true; howls: true };
+type Animal = Cat | Dog | Cheetah | Wolf;
+const animal: Animal = { meows: true };
+console.log(animal);
