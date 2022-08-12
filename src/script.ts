@@ -75,4 +75,26 @@ const person2: IPerson = {
 };
 // console.log(person1);
 const personArray: IPerson[] = [person1, person2];
-console.log(personArray);
+// console.log(personArray);
+
+// type
+type Person = {
+  name: string;
+  age: number;
+  adult: boolean;
+  hobbies: string[];
+};
+const person3: Person = {
+  name: "Nahid",
+  age: 4,
+  adult: true,
+  hobbies: ["Coding", "Cooking"],
+};
+const person4: Person = {
+  name: "Nahid",
+  age: 4,
+  adult: true,
+  hobbies: ["Coding", "Cooking"],
+};
+const personArray2: Person[] = [person3, person4];
+// console.log(personArray2);

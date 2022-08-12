@@ -19,4 +19,17 @@ var person2 = {
 };
 // console.log(person1);
 var personArray = [person1, person2];
-console.log(personArray);
+var person3 = {
+    name: "Nahid",
+    age: 4,
+    adult: true,
+    hobbies: ["Coding", "Cooking"]
+};
+var person4 = {
+    name: "Nahid",
+    age: 4,
+    adult: true,
+    hobbies: ["Coding", "Cooking"]
+};
+var personArray2 = [person3, person4];
+// console.log(personArray2);
