@@ -137,7 +137,6 @@ const getLatestValue = (input: InputNumber): number => {
 // console.log(getLatestValue({ x: 15, y: 2, z: .5 }));
 // console.log(getLatestValue({ x: 1, y: 2, z: 3 }));
 
-
 // 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ...
 // fibonaaci
 const fibonacci = (n: number): number => {
@@ -147,3 +146,58 @@ const fibonacci = (n: number): number => {
 };
 // replace n with any number
 // console.log(fibonacci(10));
+
+// fizzbuzz with return type & while loop
+const fizzBuzz = (n: number): string => {
+  let result = "";
+  while (n != 0) {
+    if (n % 3 === 0) {
+      result += "Fizz ";
+    } else if (n % 5 === 0) {
+      result += "Buzz ";
+    } else if (n % 3 === 0 && n % 5 === 0) {
+      result += "FizzBuzz ";
+    } else {
+      result += n + " ";
+    }
+    n--;
+  }
+  return result;
+};
+// console.log(fizzBuzz(15));
+// fizzbuzz with return type & for loop
+const fizzBuzz2 = (n: number): string => {
+  let result = "";
+  for (let i = 1; i <= n; i++) {
+    if (i % 3 === 0) {
+      result += "Fizz ";``
+    } else if (i % 5 === 0) {
+      result += "Buzz ";
+    } else if (i % 3 === 0 && i % 5 === 0) {
+      result += "FizzBuzz ";
+    } else {
+      result += i + " ";
+    }
+  }
+  return result;
+}
+console.log(fizzBuzz2(15));
+
+// function fizzbuzz(num: number): string | number {
+//   if (num % 15 === 0) return 'FizzBuzz';
+//   if (num % 5 === 0) return 'Buzz';
+//   if (num % 3 === 0) return 'Fizz';
+//   return num;
+// }
+
+// for (let i: number = 1; i <= 100; i++)
+// console.log(fizzbuzz(i));
+
+// const fizzbuzz = (num: number): string | number => {
+//   if (num % 15 === 0) return 'FizzBuzz';
+//   if (num % 5 === 0) return 'Buzz';
+//   if (num % 3 === 0) return 'Fizz';
+//   return num;
+// }
+// for (let i: number = 1; i <= 16; i++)
+// // console.log(fizzbuzz(i));
